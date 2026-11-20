@@ -61,5 +61,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'my-todo-app'
-          slot-name: ${{ github.ref_name == 'test' && 'my-todo-app-testing' || 'Production' }}
+          slot-name: ${{ github.ref_name == 'test' && 'testing' || 'Production' }}
           package: .
